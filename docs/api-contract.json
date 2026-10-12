@@ -1,0 +1,29 @@
+{
+  "source": "https://docs.btcpayserver.org/API/Greenfield/v1/swagger.json",
+  "checked_on": "2026-10-12",
+  "source_sha256": "8a4d1958e9eff6e3c7cc54e2bf669fb4d23adab806584c60e430c51c330ddd28",
+  "create_path": "/api/v1/stores/{storeId}/invoices",
+  "read_path": "/api/v1/invoices/{invoiceId}",
+  "methods_path": "/api/v1/invoices/{invoiceId}/payment-methods",
+  "permissions": [
+    "btcpay.store.cancreateinvoice",
+    "btcpay.store.canviewinvoices"
+  ],
+  "signature": "sha256=HMAC256(UTF8(secret), raw_body)",
+  "status": [
+    "Expired",
+    "Invalid",
+    "New",
+    "Processing",
+    "Settled"
+  ],
+  "additional_status": [
+    "Invalid",
+    "Marked",
+    "None",
+    "PaidLate",
+    "PaidOver",
+    "PaidPartial"
+  ],
+  "validation": "Source contract inspected; live processor compatibility not tested."
+}
